@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>LoginApp</servlet-name>
+		<servlet-class>com.login.LoginAppServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginApp</servlet-name>
+		<url-pattern>/loginapp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CheckUser</servlet-name>
+		<servlet-class>com.login.CheckUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckUser</servlet-name>
+		<url-pattern>/checkUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>WelcomeMsg</servlet-name>
+		<servlet-class>com.login.WelcomeMsgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WelcomeMsg</servlet-name>
+		<url-pattern>/welcomeMsg</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
